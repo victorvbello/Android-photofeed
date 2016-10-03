@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "988232033187",
+    "firebase_url": "https://photofeed-141813.firebaseio.com",
+    "project_id": "photofeed-141813",
+    "storage_bucket": "photofeed-141813.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:988232033187:android:9c80de9fc5803b5d",
+        "android_client_info": {
+          "package_name": "com.example.victorbello.photofeed"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "988232033187-q65bok95m329fu4jrqhkspi47vt2i1n2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.victorbello.photofeed",
+            "certificate_hash": "6410F92A62563B865805ECBDD8D851618F0407CF"
+          }
+        },
+        {
+          "client_id": "988232033187-sdt501eccqakh1lm9rkh16nu57nk86m7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZHqaRHiioAdzpFBzOA6Iji6cygLmyzrM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "988232033187-sdt501eccqakh1lm9rkh16nu57nk86m7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

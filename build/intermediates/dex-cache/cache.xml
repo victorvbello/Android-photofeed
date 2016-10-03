@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/victorbello/AndroidStudioProjects/PhotoFeed/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth/9.0.2/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="fa472b7cbd3897bf6bed6068ac0b00e494987688">
+        <dex dex="/home/victorbello/AndroidStudioProjects/PhotoFeed/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-auth-9.0.2_9adc26174e454fe0db4f35749fbad3cbf3d0a465.jar" />
+    </item>
+    <item
+        jar="/home/victorbello/AndroidStudioProjects/PhotoFeed/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/9.0.2/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="20e1a0f0de6276a5f36062b655f8b20f8cc00cc4">
+        <dex dex="/home/victorbello/AndroidStudioProjects/PhotoFeed/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-maps-9.0.2_80427cbfded654ce0f5729734a86ea1fcf3607a6.jar" />
+    </item>
+    <item
+        jar="/home/victorbello/.gradle/caches/modules-2/files-2.1/javax.annotation/jsr250-api/1.0/5025422767732a1ab45d93abfea846513d742dcf/jsr250-api-1.0.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="5025422767732a1ab45d93abfea846513d742dcf">
+        <dex dex="/home/victorbello/AndroidStudioProjects/PhotoFeed/app/build/intermediates/pre-dexed/debug/jsr250-api-1.0_e9c92c4e5faf0bea82662fc048afe4b621554aef.jar" />
+    </item>
+    <item
+        jar="/home/victorbello/AndroidStudioProjects/PhotoFeed/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.0.2/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="a511c684ea4c2cf31a3377d51e7677cb76696e07">
+        <dex dex="/home/victorbello/AndroidStudioProjects/PhotoFeed/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-analytics-impl-9.0.2_9d30afab67aafb9c75a378c8923a5dec0ac68aae.jar" />
+    </item>
+    <item
+        jar="/home/victorbello/AndroidStudioProjects/PhotoFeed/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.0.2/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="51a11c41a08f099a204e1b8dcc04f27217de50ec">
+        <dex dex="/home/victorbello/AndroidStudioProjects/PhotoFeed/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-analytics-9.0.2_15a184acd223c8ff6856d8f6b5c3f3525783f980.jar" />
+    </item>
+    <item
+        jar="/home/victorbello/.gradle/caches/modules-2/files-2.1/com.google.dagger/dagger/2.0.1/1261dfca5bae89a866a2855552da26feab7f8fad/dagger-2.0.1.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="1261dfca5bae89a866a2855552da26feab7f8fad">
+        <dex dex="/home/victorbello/AndroidStudioProjects/PhotoFeed/app/build/intermediates/pre-dexed/debug/dagger-2.0.1_5bd43d75fc53fadac1e00d262a72722bf83b3718.jar" />
+    </item>
+    <item
+        jar="/home/victorbello/.gradle/caches/modules-2/files-2.1/com.cloudinary/cloudinary-android/1.1.2/18b6e94e06e8fba61fc532ffbf69e913003a3e2e/cloudinary-android-1.1.2.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="18b6e94e06e8fba61fc532ffbf69e913003a3e2e">
+        <dex dex="/home/victorbello/AndroidStudioProjects/PhotoFeed/app/build/intermediates/pre-dexed/debug/cloudinary-android-1.1.2_ab2fb5d63ac8461e609de52918ac5d9ca2bf10de.jar" />
+    </item>
+    <item
+        jar="/home/victorbello/AndroidStudioProjects/PhotoFeed/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="86a062c2c066067f7cf5a7ce90b4c0cf9da942e5">
+        <dex dex="/home/victorbello/AndroidStudioProjects/PhotoFeed/app/build/intermediates/pre-dexed/debug/instant-run_7b3b6b5ce7a30a7e94afd3a84d5dd090a6f98387.jar" />
+    </item>
+    <item
+        jar="/home/victorbello/AndroidStudioProjects/PhotoFeed/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.2/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="94d9cedd04b124aed044ac71c451a292856d854c">
+        <dex dex="/home/victorbello/AndroidStudioProjects/PhotoFeed/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-9.0.2_6c613813e1493d7ddae60155b1441c8f95cf8918.jar" />
+    </item>
+    <item
+        jar="/home/victorbello/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/23.0.1/support-annotations-23.0.1.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
+        <dex dex="/home/victorbello/AndroidStudioProjects/PhotoFeed/app/build/intermediates/pre-dexed/debug/support-annotations-23.0.1_06d70d76207b5216225119774297e1eac3426b14.jar" />
+    </item>
+    <item
+        jar="/home/victorbello/AndroidStudioProjects/PhotoFeed/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database-connection/9.0.2/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="9819419ce8d79f3f81a0fc70f9345ac8c843af9c">
+        <dex dex="/home/victorbello/AndroidStudioProjects/PhotoFeed/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-database-connection-9.0.2_243b31ce80e7a141850229e1748d62d6cc0e2ff3.jar" />
+    </item>
+    <item
+        jar="/home/victorbello/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="/home/victorbello/AndroidStudioProjects/PhotoFeed/app/build/intermediates/pre-dexed/debug/javax.inject-1_3e8a1539b0f7e4d9fd5f84c3f185f3fd956ed948.jar" />
+    </item>
+    <item
+        jar="/home/victorbello/AndroidStudioProjects/PhotoFeed/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth-module/9.0.2/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="79e298d7fed2fcada58da7032d07d34ee198a545">
+        <dex dex="/home/victorbello/AndroidStudioProjects/PhotoFeed/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-auth-module-9.0.2_38736541ffad4b87ce61e945e2c8f3ff098d5070.jar" />
+    </item>
+    <item
+        jar="/home/victorbello/AndroidStudioProjects/PhotoFeed/app/build/intermediates/exploded-aar/de.hdodenhof/circleimageview/2.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="031e8b3ab2df4ab43b1017f84417d7e10dfbb8d2">
+        <dex dex="/home/victorbello/AndroidStudioProjects/PhotoFeed/app/build/intermediates/pre-dexed/debug/de.hdodenhof-circleimageview-2.0.0_aa2aaf46e586d81a5b37c81e958657003b3f83d0.jar" />
+    </item>
+    <item
+        jar="/home/victorbello/AndroidStudioProjects/PhotoFeed/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database/9.0.2/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="4ec890171a97b5ab98292f131aa784e0f3792c73">
+        <dex dex="/home/victorbello/AndroidStudioProjects/PhotoFeed/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-database-9.0.2_4028f40666f12ebd51625b63a71ad20160ec2244.jar" />
+    </item>
+    <item
+        jar="/home/victorbello/AndroidStudioProjects/PhotoFeed/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="3a754e3bc8d049b4282ff7f9a071cfb0e8b501e5">
+        <dex dex="/home/victorbello/AndroidStudioProjects/PhotoFeed/app/build/intermediates/pre-dexed/debug/instant-run-bootstrap_6c948e37706d55656e870770696b8acbe14bbf71.jar" />
+    </item>
+    <item
+        jar="/home/victorbello/AndroidStudioProjects/PhotoFeed/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/libs/internal_impl-23.0.1.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="/home/victorbello/AndroidStudioProjects/PhotoFeed/app/build/intermediates/pre-dexed/debug/internal_impl-23.0.1_ffb9cdf0dcc29913d5477dd2847856529b45cb24.jar" />
+    </item>
+    <item
+        jar="/home/victorbello/AndroidStudioProjects/PhotoFeed/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="/home/victorbello/AndroidStudioProjects/PhotoFeed/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.0.1_3f06e946d293152517b088a44b9d217c82ce4d8b.jar" />
+    </item>
+    <item
+        jar="/home/victorbello/AndroidStudioProjects/PhotoFeed/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="/home/victorbello/AndroidStudioProjects/PhotoFeed/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.0.1_8b7a8cb1cff36799108600b835822ff1ee3fafc6.jar" />
+    </item>
+    <item
+        jar="/home/victorbello/AndroidStudioProjects/PhotoFeed/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.0.2/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="aec1bc54964a85d851c2c1b1cb7f90f7dbd755ab">
+        <dex dex="/home/victorbello/AndroidStudioProjects/PhotoFeed/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tasks-9.0.2_34cae24834131623aa4eee4fce3a3f045cb7ddaa.jar" />
+    </item>
+    <item
+        jar="/home/victorbello/AndroidStudioProjects/PhotoFeed/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.0.2/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="4022261eeea0d92eb2997a68d2c1f084a16abad9">
+        <dex dex="/home/victorbello/AndroidStudioProjects/PhotoFeed/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-9.0.2_c07bd4ff2b64c001956e1ad85cd4c66c00068d40.jar" />
+    </item>
+    <item
+        jar="/home/victorbello/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.7.0/9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4/glide-3.7.0.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="/home/victorbello/AndroidStudioProjects/PhotoFeed/app/build/intermediates/pre-dexed/debug/glide-3.7.0_e119d21240840e83c138568f7d5672e41c4fd073.jar" />
+    </item>
+    <item
+        jar="/home/victorbello/AndroidStudioProjects/PhotoFeed/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/9.0.2/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="92a1d5f71b0fc8938f1d3f2e6ef984b52b894b4d">
+        <dex dex="/home/victorbello/AndroidStudioProjects/PhotoFeed/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-location-9.0.2_98d9a35cafe447413b03a1c16da17b9191a87f56.jar" />
+    </item>
+    <item
+        jar="/home/victorbello/AndroidStudioProjects/PhotoFeed/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.0.2/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="9919563cffd8e3732e944d3c437d4b9575a08448">
+        <dex dex="/home/victorbello/AndroidStudioProjects/PhotoFeed/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-common-9.0.2_1f803c87f366e1ebec6cc732ce4a27bc4b795538.jar" />
+    </item>
+    <item
+        jar="/home/victorbello/.gradle/caches/modules-2/files-2.1/com.cloudinary/cloudinary-core/1.1.2/8ce451b422e838b37f75f0ba830a16efea0de964/cloudinary-core-1.1.2.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="8ce451b422e838b37f75f0ba830a16efea0de964">
+        <dex dex="/home/victorbello/AndroidStudioProjects/PhotoFeed/app/build/intermediates/pre-dexed/debug/cloudinary-core-1.1.2_735b2c7483bf661f8c2f7e63e54397232581921b.jar" />
+    </item>
+    <item
+        jar="/home/victorbello/AndroidStudioProjects/PhotoFeed/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.0.2/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="b3d0809a742c5f768c6aa9efc6decd5c1d6cd227">
+        <dex dex="/home/victorbello/AndroidStudioProjects/PhotoFeed/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-iid-9.0.2_bac4b68271dc16bcb4a8f9146db969b434a3cff9.jar" />
+    </item>
+    <item
+        jar="/home/victorbello/AndroidStudioProjects/PhotoFeed/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.0.1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="4356e230a981d1bbf047d848b91bc0d9b7c5bacc">
+        <dex dex="/home/victorbello/AndroidStudioProjects/PhotoFeed/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-23.0.1_fb278967d2c755c50b28513326e253ef8d8e94b6.jar" />
+    </item>
+    <item
+        jar="/home/victorbello/AndroidStudioProjects/PhotoFeed/app/build/intermediates/exploded-aar/com.android.support/design/23.0.1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="e5c61a3169221a89654ffcaaed47bba51cf071ad">
+        <dex dex="/home/victorbello/AndroidStudioProjects/PhotoFeed/app/build/intermediates/pre-dexed/debug/com.android.support-design-23.0.1_edb7c64156ec9b17b43c79f1ad9d5af3d167dfdb.jar" />
+    </item>
+    <item
+        jar="/home/victorbello/.gradle/caches/modules-2/files-2.1/org.greenrobot/eventbus/3.0.0/ddd99896e9569eaababbe81b35d80e1b91c4ad85/eventbus-3.0.0.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="ddd99896e9569eaababbe81b35d80e1b91c4ad85">
+        <dex dex="/home/victorbello/AndroidStudioProjects/PhotoFeed/app/build/intermediates/pre-dexed/debug/eventbus-3.0.0_8271aacc9a736e76878f35bde80a42ecb16e532c.jar" />
+    </item>
+    <item
+        jar="/home/victorbello/AndroidStudioProjects/PhotoFeed/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth-common/9.0.2/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="568d5bda0b4d51f90d978ace369bb9ad024d2057">
+        <dex dex="/home/victorbello/AndroidStudioProjects/PhotoFeed/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-auth-common-9.0.2_7f47f8852e70c2ded42a7695de2e68219b0d24c0.jar" />
+    </item>
+
+</items>

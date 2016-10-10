@@ -17,4 +17,6 @@
     <string name="main.error.dispatch.camera">Error al crear archivo</string>
     <string name="main.menu.action.logout">Cerrar sesión</string>
     <string name="main.message.picture.source">Selecciona una foto</string>
+
+    <string name="photolist.menssage.share">Compartir</string>
 </resources>

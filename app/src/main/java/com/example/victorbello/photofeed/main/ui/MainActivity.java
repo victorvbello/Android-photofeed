@@ -45,7 +45,7 @@ import android.support.design.widget.Snackbar;
 import android.support.design.widget.FloatingActionButton;
 import android.location.Location;
 
-import com.example.victorbello.photofeed.PhotoListFragment;
+import com.example.victorbello.photofeed.photolist.ui.PhotoListFragment;
 import com.example.victorbello.photofeed.PhotoMapFragment;
 import com.example.victorbello.photofeed.main.MainPresenter;
 import com.google.android.gms.common.ConnectionResult;

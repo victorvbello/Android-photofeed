@@ -54,7 +54,7 @@
         jar="/home/victorbello/AndroidStudioProjects/PhotoFeed/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         revision="23.0.2"
-        sha1="86a062c2c066067f7cf5a7ce90b4c0cf9da942e5">
+        sha1="3bbf9c77620546d1f028f31146ab3498f6e36027">
         <dex dex="/home/victorbello/AndroidStudioProjects/PhotoFeed/app/build/intermediates/pre-dexed/debug/instant-run_7b3b6b5ce7a30a7e94afd3a84d5dd090a6f98387.jar" />
     </item>
     <item
@@ -110,7 +110,7 @@
         jar="/home/victorbello/AndroidStudioProjects/PhotoFeed/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         revision="23.0.2"
-        sha1="3a754e3bc8d049b4282ff7f9a071cfb0e8b501e5">
+        sha1="7ecbf921f869db475a0df7397571a610920acdea">
         <dex dex="/home/victorbello/AndroidStudioProjects/PhotoFeed/app/build/intermediates/pre-dexed/debug/instant-run-bootstrap_6c948e37706d55656e870770696b8acbe14bbf71.jar" />
     </item>
     <item

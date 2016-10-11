@@ -19,4 +19,5 @@
     <string name="main.message.picture.source">Selecciona una foto</string>
 
     <string name="photolist.menssage.share">Compartir</string>
+    <string name="photolist.menssage.list.empty">Listado Vacío</string>
 </resources>

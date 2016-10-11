@@ -123,7 +123,11 @@ public class PhotoListFragment extends Fragment implements PhotoListView, OnItem
 
     @Override
     public void onPhotoError(String error) {
-        Snackbar.make(container,error,Snackbar.LENGTH_SHORT).show();
+        if(error!="") {
+            Snackbar.make(container, error, Snackbar.LENGTH_SHORT).show();
+        }else{
+            Snackbar.make(container, getString(R.string.photolist_menssage_list_empty), Snackbar.LENGTH_SHORT).show();
+        }
     }
 
     @Override

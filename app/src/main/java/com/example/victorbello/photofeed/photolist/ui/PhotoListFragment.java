@@ -28,6 +28,7 @@ import android.support.v7.widget.RecyclerView;
 
 
 import com.bumptech.glide.load.resource.bitmap.GlideBitmapDrawable;
+import com.example.victorbello.photofeed.PhotoFeedApp;
 import com.example.victorbello.photofeed.R;
 import com.example.victorbello.photofeed.entities.Photo;
 import com.example.victorbello.photofeed.photolist.PhotoListPresenter;
@@ -42,9 +43,9 @@ public class PhotoListFragment extends Fragment implements PhotoListView, OnItem
     private ProgressBar progressbar;
 
     @Inject
-    private PhotoListAdapter adapter;
+    public PhotoListAdapter adapter;
     @Inject
-    private PhotoListPresenter presenter;
+    public PhotoListPresenter presenter;
 
 
     public PhotoListFragment(){
@@ -79,6 +80,8 @@ public class PhotoListFragment extends Fragment implements PhotoListView, OnItem
     }
 
     private void setupInjection() {
+        PhotoFeedApp  app=(PhotoFeedApp) getActivity().getApplication();
+        app.getPhotoListComponent(this,this,this).inject(this);
     }
 
     private void setupRecyclerView() {
@@ -123,11 +126,17 @@ public class PhotoListFragment extends Fragment implements PhotoListView, OnItem
 
     @Override
     public void onPhotoError(String error) {
+
+        int idMsg=getResources().getIdentifier(error, "string", getActivity().getPackageName());
+
         if(error!="") {
             Snackbar.make(container, error, Snackbar.LENGTH_SHORT).show();
+        }else if(idMsg!=0){
+            Snackbar.make(container, getString(idMsg), Snackbar.LENGTH_SHORT).show();
         }else{
-            Snackbar.make(container, getString(R.string.photolist_menssage_list_empty), Snackbar.LENGTH_SHORT).show();
+            Snackbar.make(container, getString(R.string.photolist_message_list_empty), Snackbar.LENGTH_SHORT).show();
         }
+
     }
 
     @Override
@@ -143,7 +152,7 @@ public class PhotoListFragment extends Fragment implements PhotoListView, OnItem
     public void onShareClick(Photo photo, ImageView img) {
         Bitmap bitmap=((GlideBitmapDrawable)img.getDrawable()).getBitmap();
         Intent share=new Intent(Intent.ACTION_SEND);
-        share.setType("image/jpeg");
+        share.setType("image/jpg");
 
         ByteArrayOutputStream bytes=new ByteArrayOutputStream();
         bitmap.compress(Bitmap.CompressFormat.JPEG,100,bytes);
@@ -151,7 +160,7 @@ public class PhotoListFragment extends Fragment implements PhotoListView, OnItem
         Uri imageUri=Uri.parse(path);
 
         share.putExtra(Intent.EXTRA_STREAM, imageUri);
-        startActivity(Intent.createChooser(share,getString(R.string.photolist_menssage_share)));
+        startActivity(Intent.createChooser(share,getString(R.string.photolist_message_share)));
     }
 
     @Override

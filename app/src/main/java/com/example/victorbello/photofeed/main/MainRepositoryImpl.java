@@ -38,6 +38,7 @@ public class MainRepositoryImpl implements MainRepository {
         final Photo photo=new Photo();
         photo.setId(newPhotoId);
         photo.setEmail(firebaseAPI.getAuthEmail());
+        photo.setPublishedByMe(true);
         if(location!=null){
             photo.setLatitude(location.getLatitude());
             photo.setLongitude(location.getLongitude());

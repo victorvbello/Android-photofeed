@@ -23,8 +23,8 @@ import com.example.victorbello.photofeed.entities.Photo;
 
 public class FirebaseAPI {
 
-    private static final String onChildrenCountEmpty="photolist_message_db_empty";
-    private static final String onCurrentUserNull="photolist_message_cantnot_getuser";
+    private static final String onChildrenCountEmpty="10000";
+    private static final String onCurrentUserNull="20000";
 
     private DatabaseReference databaseReference;
     private FirebaseAuth firebaseAuth;
@@ -58,7 +58,7 @@ public class FirebaseAPI {
             photosEventListener= new ChildEventListener() {
                 @Override
                 public void onChildAdded(DataSnapshot dataSnapshot, String s) {
-                    firebaseEventListenerCallback.onChilAdded(dataSnapshot);
+                    firebaseEventListenerCallback.onChildAdded(dataSnapshot);
                 }
 
                 @Override
@@ -68,7 +68,7 @@ public class FirebaseAPI {
 
                 @Override
                 public void onChildRemoved(DataSnapshot dataSnapshot) {
-                    firebaseEventListenerCallback.onChilRemoved(dataSnapshot);
+                    firebaseEventListenerCallback.onChildRemoved(dataSnapshot);
                 }
 
                 @Override

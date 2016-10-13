@@ -8,6 +8,7 @@ import javax.inject.Inject;
 import android.support.annotation.Nullable;
 
 import java.io.ByteArrayOutputStream;
+import java.util.HashMap;
 
 import android.os.Bundle;
 import android.net.Uri;
@@ -42,6 +43,8 @@ public class PhotoListFragment extends Fragment implements PhotoListView, OnItem
     private RecyclerView recyclerView;
     private ProgressBar progressbar;
 
+    private HashMap<String,Integer> arrMsg;
+
     @Inject
     public PhotoListAdapter adapter;
     @Inject
@@ -49,7 +52,9 @@ public class PhotoListFragment extends Fragment implements PhotoListView, OnItem
 
 
     public PhotoListFragment(){
-
+        arrMsg=new HashMap<String,Integer>();
+        arrMsg.put("10000",R.string.photolist_message_db_empty);
+        arrMsg.put("20000",R.string.photolist_message_cantnot_getuser);
     }
 
     @Override
@@ -127,12 +132,12 @@ public class PhotoListFragment extends Fragment implements PhotoListView, OnItem
     @Override
     public void onPhotoError(String error) {
 
-        int idMsg=getResources().getIdentifier(error, "string", getActivity().getPackageName());
+        int idMsg=Integer.getInteger(error,0);
 
         if(error!="") {
             Snackbar.make(container, error, Snackbar.LENGTH_SHORT).show();
         }else if(idMsg!=0){
-            Snackbar.make(container, getString(idMsg), Snackbar.LENGTH_SHORT).show();
+            Snackbar.make(container, arrMsg.get(idMsg), Snackbar.LENGTH_SHORT).show();
         }else{
             Snackbar.make(container, getString(R.string.photolist_message_list_empty), Snackbar.LENGTH_SHORT).show();
         }

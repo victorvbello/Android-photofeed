@@ -57,22 +57,23 @@ public class PhotoListPresenterImpl implements PhotoListPresenter {
     @Override
     @Subscribe
     public void onEventMainThread(PhotoListEvent event) {
+        String error=event.getError();
         if(this.view!=null){
             view.hideProgress();
             view.showList();
-        }
-        String error=event.getError();
-        if(error!=null){
-            view.onPhotoError(error);
-        }else{
-            switch (event.getType()){
-                case PhotoListEvent.READ_EVENT:
-                    view.addPhoto(event.getPhoto());
-                    break;
-                case PhotoListEvent.DELETE_EVENT:
-                    view.removePhoto(event.getPhoto());
-                    break;
+            if(error!=null){
+                view.onPhotoError(error);
+            }else{
+                switch (event.getType()){
+                    case PhotoListEvent.READ_EVENT:
+                        view.addPhoto(event.getPhoto());
+                        break;
+                    case PhotoListEvent.DELETE_EVENT:
+                        view.removePhoto(event.getPhoto());
+                        break;
+                }
             }
         }
+
     }
 }

@@ -9,7 +9,7 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 
 public interface FirebaseEventListenerCallback {
-    void onChilAdded(DataSnapshot snapshot);
-    void onChilRemoved(DataSnapshot snapshot);
+    void onChildAdded(DataSnapshot snapshot);
+    void onChildRemoved(DataSnapshot snapshot);
     void onCancelled(DatabaseError error);
 }

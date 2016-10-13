@@ -23,8 +23,8 @@ import com.example.victorbello.photofeed.entities.Photo;
 
 public class FirebaseAPI {
 
-    private static final String onChildrenCountEmpty="Sin elelemtos en la base de datos";
-    private static final String onCurrentUserNull="Imposible optener usuario actual";
+    private static final String onChildrenCountEmpty="photolist_message_db_empty";
+    private static final String onCurrentUserNull="photolist_message_cantnot_getuser";
 
     private DatabaseReference databaseReference;
     private FirebaseAuth firebaseAuth;

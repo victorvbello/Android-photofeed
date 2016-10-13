@@ -54,9 +54,6 @@ public class PhotoListAdapter extends RecyclerView.Adapter<PhotoListAdapter.View
 
         if(lat!=0.0 && lng!=0.0){
             holder.txtPlace.setText(util.getFromLocation(lat,lng));
-            holder.txtUser.setVisibility(View.VISIBLE);
-        }else{
-            holder.txtUser.setVisibility(View.GONE);
         }
 
         if(currentPhoto.isPublishedByMe()){

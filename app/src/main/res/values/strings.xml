@@ -18,6 +18,8 @@
     <string name="main.menu.action.logout">Cerrar sesión</string>
     <string name="main.message.picture.source">Selecciona una foto</string>
 
-    <string name="photolist.menssage.share">Compartir</string>
-    <string name="photolist.menssage.list.empty">Listado Vacío</string>
+    <string name="photolist.message.share">Compartir</string>
+    <string name="photolist.message.list.empty">Listado Vacío</string>
+    <string name="photolist.message.db.empty">Sin elelemtos en la base de datos</string>
+    <string name="photolist.message.cantnot.getuser">Imposible optener usuario actual</string>
 </resources>

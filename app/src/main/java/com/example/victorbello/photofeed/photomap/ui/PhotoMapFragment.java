@@ -40,10 +40,10 @@ public class PhotoMapFragment extends Fragment implements PhotoMapView , OnMapRe
     private GoogleMap map;
     private static final int PERMISSIONS_REQUEST_LOCATION=1;
 
-    /*
+
     @Inject
     public PhotoMapPresenter presenter;
-    */
+
 
 
     public PhotoMapFragment(){
@@ -57,7 +57,7 @@ public class PhotoMapFragment extends Fragment implements PhotoMapView , OnMapRe
     public void onCreate(@Nullable Bundle savedInstanceEstate){
         super.onCreate(savedInstanceEstate);
         setupInjection();
-        //presenter.onCreate();
+        presenter.onCreate();
     }
 
     private void setupInjection() {
@@ -68,8 +68,8 @@ public class PhotoMapFragment extends Fragment implements PhotoMapView , OnMapRe
 
     @Override
     public void onDestroy(){
-        //presenter.unsubscribe();
-        //presenter.onDestroy();
+        presenter.unsubscribe();
+        presenter.onDestroy();
         super.onDestroy();
     }
 
@@ -78,7 +78,7 @@ public class PhotoMapFragment extends Fragment implements PhotoMapView , OnMapRe
         View view=inflater.inflate(R.layout.fragment_photo_map,container,false);
         container=(FrameLayout) view.findViewById(R.id.container);
 
-       //presenter.subscribe();
+       presenter.subscribe();
         return view;
     }
 

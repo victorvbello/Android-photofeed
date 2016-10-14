@@ -24,6 +24,11 @@ import com.example.victorbello.photofeed.photolist.di.PhotoListModule;
 import com.example.victorbello.photofeed.photolist.ui.PhotoListFragment;
 import com.example.victorbello.photofeed.photolist.ui.PhotoListView;
 import com.example.victorbello.photofeed.photolist.ui.adapters.OnItemClickListener;
+import com.example.victorbello.photofeed.photomap.di.DaggerPhotoMapComponent;
+import com.example.victorbello.photofeed.photomap.di.PhotoMapComponent;
+import com.example.victorbello.photofeed.photomap.di.PhotoMapModule;
+import com.example.victorbello.photofeed.photomap.ui.PhotoMapFragment;
+import com.example.victorbello.photofeed.photomap.ui.PhotoMapView;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class PhotoFeedApp extends Application{
@@ -80,13 +85,23 @@ public class PhotoFeedApp extends Application{
                 .build();
     }
 
-    public PhotoListComponent getPhotoListComponent(PhotoListFragment fragment,PhotoListView view, OnItemClickListener onItemClickListener){
+    public PhotoListComponent getPhotoListComponent(Fragment fragment,PhotoListView view, OnItemClickListener onItemClickListener){
         return DaggerPhotoListComponent
                 .builder()
                 .photoFeedAppModule(photoFeedAppModule)
                 .domainModule(domainModuel)
                 .libsModule(new LibsModule(fragment))
                 .photoListModule(new PhotoListModule(view,onItemClickListener))
+                .build();
+    }
+
+    public PhotoMapComponent getPhotoMapComponent(Fragment fragment, PhotoMapView view){
+        return DaggerPhotoMapComponent
+                .builder()
+                .photoFeedAppModule(photoFeedAppModule)
+                .domainModule(domainModuel)
+                .libsModule(new LibsModule(fragment))
+                .photoMapModule(new PhotoMapModule(view))
                 .build();
     }
 }

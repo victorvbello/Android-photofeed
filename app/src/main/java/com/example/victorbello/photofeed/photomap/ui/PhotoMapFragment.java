@@ -8,6 +8,7 @@ package com.example.victorbello.photofeed.photomap.ui;
 import javax.inject.Inject;
 import android.support.annotation.Nullable;
 import java.util.HashMap;
+import java.util.Map;
 
 import android.os.Bundle;
 import android.os.Build;
@@ -23,8 +24,12 @@ import android.widget.FrameLayout;
 import android.support.design.widget.Snackbar;
 
 import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
+import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.CameraUpdateFactory;
 
 import com.example.victorbello.photofeed.PhotoFeedApp;
 import com.example.victorbello.photofeed.R;
@@ -35,10 +40,13 @@ import com.example.victorbello.photofeed.photomap.PhotoMapPresenter;
 
 public class PhotoMapFragment extends Fragment implements PhotoMapView , OnMapReadyCallback{
 
+    private static final int PERMISSIONS_REQUEST_LOCATION=1;
+
     private FrameLayout container;
     private HashMap<String,Integer> arrMsg;
     private GoogleMap map;
-    private static final int PERMISSIONS_REQUEST_LOCATION=1;
+    private HashMap<Marker,Photo> markers;
+
 
 
     @Inject
@@ -57,6 +65,7 @@ public class PhotoMapFragment extends Fragment implements PhotoMapView , OnMapRe
     public void onCreate(@Nullable Bundle savedInstanceEstate){
         super.onCreate(savedInstanceEstate);
         setupInjection();
+        markers=new HashMap<Marker, Photo>();
         presenter.onCreate();
     }
 
@@ -77,8 +86,6 @@ public class PhotoMapFragment extends Fragment implements PhotoMapView , OnMapRe
     public View onCreateView (LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
         View view=inflater.inflate(R.layout.fragment_photo_map,container,false);
         container=(FrameLayout) view.findViewById(R.id.container);
-
-       presenter.subscribe();
         return view;
     }
 
@@ -92,11 +99,24 @@ public class PhotoMapFragment extends Fragment implements PhotoMapView , OnMapRe
 
     @Override
     public void addPhoto(Photo photo) {
+        LatLng location=new LatLng(photo.getLatitude(),photo.getLongitude());
+
+        Marker marker=map.addMarker(new MarkerOptions().position(location));
+        map.moveCamera(CameraUpdateFactory.newLatLngZoom(location,6));
+        markers.put(marker,photo);
     }
 
     @Override
     public void removePhoto(Photo photo) {
-
+        for(Map.Entry<Marker,Photo> entry: markers.entrySet()){
+            Photo currentPhoto=entry.getValue();
+            Marker currentMarker=entry.getKey();
+            if(currentPhoto.getId().equals(photo.getId())){
+                currentMarker.remove();
+                markers.remove(currentMarker);
+                break;
+            }
+        }
     }
 
     @Override
@@ -115,6 +135,7 @@ public class PhotoMapFragment extends Fragment implements PhotoMapView , OnMapRe
     @Override
     public void onMapReady(GoogleMap googleMap) {
         map=googleMap;
+        presenter.subscribe();
         if(ActivityCompat.checkSelfPermission(getActivity(),Manifest.permission.ACCESS_FINE_LOCATION)!=PackageManager.PERMISSION_GRANTED &&
                 ActivityCompat.checkSelfPermission(getActivity(),Manifest.permission.ACCESS_COARSE_LOCATION)!= PackageManager.PERMISSION_GRANTED){
             if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.M){
